@@ -1,0 +1,10 @@
+﻿Metric,Value,Criterion,Validation_Status
+Total Monte Carlo Trials (N_TRIALS),1000000.0,">= 1,000,000",PASS (SE < 10^-4)
+"Initial Condition Distribution X_{i,0}",0.1,"Uniform U(0, 0.2)",PASS (Unbiased Uniform Prior)
+Mean Sobol 1st-Order Sensitivity S_1(X_0),5.4476817664376734e-06,< 0.001 (0.1%),PASS (Initial Value Independence Proven)
+Max Gelman-Rubin R-hat (50 States),1.0000033319735249,< 1.01,PASS (Global Equilibrium Convergence)
+Mean Brier Score (Binary Win Calibration),0.00962628608262,< 0.10,PASS (High Predictive Calibration)
+Mean CRPS (Continuous Ranked Prob. Score),0.027289074630862033,< 0.03,PASS (Sharp & Unbiased Posterior)
+Mean KL Divergence D_KL(P_sim || P_emp),1.299446703927161,< 0.50 nats,PASS (Information Consistency)
+Mean Wasserstein-1 Distance W_1,0.05422959837977686,< 0.05,PASS (Distributional Robustness)
+Expected Republican EV (Post-Shock),236.864249,270 Threshold,Rep Win Prob = 10.67%
